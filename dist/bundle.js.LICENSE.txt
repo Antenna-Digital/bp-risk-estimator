@@ -1,0 +1,68 @@
+/*!
+ * Chart.js v2.9.3
+ * https://www.chartjs.org
+ * (c) 2019 Chart.js Contributors
+ * Released under the MIT License
+ */
+
+/*!
+ * cleave.js - 1.6.0
+ * https://github.com/nosir/cleave.js
+ * Apache License Version 2.0
+ *
+ * Copyright (C) 2012-2020 Max Huang https://github.com/nosir/
+ */
+
+/*! nouislider - 14.5.0 - 5/11/2020 */
+
+/**
+ * @license Complex.js v2.0.11 11/02/2016
+ *
+ * Copyright (c) 2016, Robert Eisele (robert@xarg.org)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ **/
+
+/**
+ * @license Fraction.js v4.0.12 09/09/2015
+ * http://www.xarg.org/2014/03/rational-numbers-in-javascript/
+ *
+ * Copyright (c) 2015, Robert Eisele (robert@xarg.org)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ **/
+
+/**
+ * math.js
+ * https://github.com/josdejong/mathjs
+ *
+ * Math.js is an extensive math library for JavaScript and Node.js,
+ * It features real and complex numbers, units, matrices, a large set of
+ * mathematical functions, and a flexible expression parser.
+ *
+ * @version 7.0.0
+ * @date    2020-05-07
+ *
+ * @license
+ * Copyright (C) 2013-2020 Jos de Jong <wjosdejong@gmail.com>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy
+ * of the License at
+ *
+ * https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+
+/**!
+* tippy.js v6.2.3
+* (c) 2017-2020 atomiks
+* MIT License
+*/
+
+//! moment.js
+
+//! moment.js locale configuration
