@@ -1,98 +1,74 @@
+# Workflow
+
+## First time setup
+Clone the repository
+
+```bash
+git clone https://github.com/Antenna-Digital/bp-risk-estimator.git
+```
+
+### if you have already cloned the repository
+
+```bash
+git pull
+```
+
+### Webpack Changes
+
+Switch production to development
+
+```js
+mode: 'production'
+```
+
+to
+
+```js
+mode: 'development'
+```
+
+### Run directory on a local server
+
+Utilize a chrome extension to swap current js with local js
+ - Requestly (requestly.com/)
 
 ```
-{
-  "name": "branchpattern",
-  "version": "1.0.0",
-  "description": "Wordpress theme for BranchPattern",
-  "license": "LicenseRef-LICENSE",
-  "engines": {
-    "node": ">=8.9.0",
-    "npm": ">=5.5.1"
-  },
-  "repository": {
-    "type": "git"
-  },
-  "main": "src/stylesheets/_application.scss",
-  "scripts": {
-    "start": "gulp",
-    "gulp": "gulp",
-    "refresh": "rm -fr node_modules && npm install",
-    "production": "gulp production"
-  },
-  "browserslist": [
-    "last 3 versions",
-    "not ie < 11",
-    "not bb < 10",
-    "not OperaMini < 50",
-    "not OperaMobile < 50"
-  ],
-  "devDependencies": {
-    "autoprefixer": "7.1.6",
-    "babel-core": "^6.25.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-loader": "^7.1.1",
-    "babel-preset-env": "^1.6.1",
-    "browser-sync": "^2.18.8",
-    "cheerio": "^1.0.0-rc.2",
-    "cssnano": "^3.10.0",
-    "del": "^3.0.0",
-    "es6-promise": "^4.1.1",
-    "gulp": "^3.9.1",
-    "gulp-changed": "^3.1.1",
-    "gulp-data": "^1.2.1",
-    "gulp-htmlmin": "^3.0.0",
-    "gulp-iconfont": "^9.0.2",
-    "gulp-if": "^2.0.2",
-    "gulp-imagemin": "4.0.0",
-    "gulp-notify": "^3.0.0",
-    "gulp-nunjucks-render": "^2.2.1",
-    "gulp-postcss": "^7.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.6.1",
-    "gulp-rev": "^8.1.0",
-    "gulp-rev-napkin": "^0.1.0",
-    "gulp-rev-replace": "^0.4.3",
-    "gulp-sass": "^3.1.0",
-    "gulp-sequence": "^0.4.6",
-    "gulp-sizereport": "^1.2.0",
-    "gulp-sourcemaps": "^2.6.0",
-    "gulp-svgstore": "^6.1.0",
-    "gulp-util": "^3.0.8",
-    "gulp-watch": "^4.3.11",
-    "lodash": "^4.17.4",
-    "lint-staged": "^4.0.0",
-    "merge-stream": "^1.0.1",
-    "minimist": "^1.2.0",
-    "node-fs-extra": "^0.8.2",
-    "node-sass-glob-importer": "^5.0.0-alpha.5",
-    "open": "^0.0.5",
-    "pretty-hrtime": "^1.0.3",
-    "require-dir": "^0.3.2",
-    "stylelint": "^8.0.0",
-    "stylelint-config-standard": "^17.0.0",
-    "through2": "^2.0.3",
-    "webpack": "^3.4.1",
-    "webpack-dev-middleware": "^1.12.0",
-    "webpack-hot-middleware": "^2.18.2"
-  },
-  "dependencies": {
-    "chart.js": "^2.9.3",
-    "chartjs-plugin-labels": "^1.1.0",
-    "cleave.js": "^1.6.0",
-    "desandro-matches-selector": "2.0.2",
-    "google-maps": "^3.2.1",
-    "imagesloaded": "^4.1.4",
-    "include-media": "1.4.9",
-    "mathjs": "^7.0.0",
-    "multiscroll.js": "^0.2.2",
-    "nouislider": "^14.5.0",
-    "plyr": "^3.3.9",
-    "print-js": "^1.4.0",
-    "sassqwatch": "0.7.4",
-    "tiny-slider": "^2.8.2",
-    "tippy.js": "^6.2.3",
-    "verge": "1.10.2",
-    "wnumb": "^1.2.0"
-  }
-}
+https://cdn.jsdelivr.net/gh/Antenna-Digital/bp-risk-estimator@main/scripts.js
 ```
+
+## Making changes
+Edit the script.js file in the root directory
+
+## Testing changes
+run `npx webpack` to build the project
+
+After building the project the dist/bundle.js file will be updated with the new changes and is ready to be tested on webflow.
+
+## Pushing changes
+Swap development to production
+
+```js
+mode: 'development'
+```
+
+to
+
+```js
+mode: 'production'
+```
+
+Push the changes to the main branch
+
+```bash
+git add .
+git commit -m "your commit message"
+git push origin main
+```
+
+Purge the jsDeliver cache
+
+```
+https://purge.jsdelivr.net/gh/Antenna-Digital/bp-risk-estimator@main/scripts.js
+```
+
+After 5-10 minutes the purge should be complete.
