@@ -57,6 +57,8 @@ to
 mode: 'production'
 ```
 
+Run `npx webpack` to build production bundle.js
+
 Push the changes to the main branch
 
 ```bash
