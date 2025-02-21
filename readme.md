@@ -1,10 +1,17 @@
 # Workflow
+## Dependencies
+- Node.js
 
 ## First time setup
 Clone the repository
 
 ```bash
 git clone https://github.com/Antenna-Digital/bp-risk-estimator.git
+```
+
+Install dependencies
+```bash
+npm install
 ```
 
 ### if you have already cloned the repository
