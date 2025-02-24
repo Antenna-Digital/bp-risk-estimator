@@ -592,7 +592,7 @@ export default class Influenzav2 {
     });
 
     // canvas graph - hypothetical r-values
-    const chartRValuesCanvas = document.getElementById('chart-aerosol-design-settling');
+    const chartRValuesCanvas = document.getElementById('chart-aerosol-rvalues');
     const chartRValuesCompare = new Chart(chartRValuesCanvas, {
       type: 'bar',
       data: {
